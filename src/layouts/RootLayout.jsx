@@ -4,10 +4,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import { Toaster } from 'react-hot-toast';
+import DisclaimerModal from '../components/DisclaimerModal';
 
 export default function RootLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-[#fafbfc] text-slate-800">
+
+      <DisclaimerModal/>
       {/* Scroll Restorer */}
       <ScrollToTop />
 
