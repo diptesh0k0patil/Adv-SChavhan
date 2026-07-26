@@ -192,7 +192,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 font-sans">
           <p>
-            &copy; {new Date().getFullYear()} {ADVOCATE_INFO.name}. All Rights Reserved. Designed to the highest standard.
+            &copy; {new Date().getFullYear()} {ADVOCATE_INFO.name}. All Rights Reserved. Developed By infodad Technologies Private Limited
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <span className="flex items-center space-x-1">
