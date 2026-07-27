@@ -6,18 +6,27 @@ export default function DisclaimerModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if user has already accepted the disclaimer
-    const accepted = localStorage.getItem('disclaimer_accepted');
+    // Check if user has already accepted the disclaimer in this browser tab/session
+    const accepted = sessionStorage.getItem('disclaimer_accepted');
+
     if (accepted !== 'true') {
       setIsOpen(true);
       // Disable body scroll when modal is active
       document.body.style.overflow = 'hidden';
     }
+
+    // Cleanup
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('disclaimer_accepted', 'true');
+    // Save acceptance only for the current browser tab/session
+    sessionStorage.setItem('disclaimer_accepted', 'true');
+
     setIsOpen(false);
+
     // Restore body scroll
     document.body.style.overflow = 'unset';
   };
@@ -57,7 +66,7 @@ export default function DisclaimerModal() {
               </div>
             </div>
 
-            {/* Content Area with custom thin scrollbar */}
+            {/* Content Area */}
             <div className="p-6 sm:p-8 space-y-6 overflow-y-auto text-slate-700 text-sm font-sans leading-relaxed scrollbar-thin">
               <p className="font-serif font-semibold text-slate-900 text-base border-l-4 border-accent-500 pl-3.5">
                 Welcome to the official website of Shankar Chavan, Advocate, High Court of Bombay, Mumbai.
@@ -72,28 +81,33 @@ export default function DisclaimerModal() {
                   <FiAlertTriangle className="text-accent-500 w-4 h-4" />
                   <span>By accessing this website, you acknowledge and confirm that:</span>
                 </h4>
-                
+
                 <ul className="space-y-2.5 text-xs text-slate-600">
                   <li className="flex items-start space-x-2.5">
                     <span className="w-1.5 h-1.5 bg-accent-500 rounded-full shrink-0 mt-1.5" />
                     <span>You are seeking information about the advocate on your own initiative.</span>
                   </li>
+
                   <li className="flex items-start space-x-2.5">
                     <span className="w-1.5 h-1.5 bg-accent-500 rounded-full shrink-0 mt-1.5" />
                     <span>There has been no advertisement, solicitation, invitation, or inducement by the advocate or this website.</span>
                   </li>
+
                   <li className="flex items-start space-x-2.5">
                     <span className="w-1.5 h-1.5 bg-accent-500 rounded-full shrink-0 mt-1.5" />
                     <span>The information available on this website is provided only for informational purposes and should not be construed as legal advice.</span>
                   </li>
+
                   <li className="flex items-start space-x-2.5">
                     <span className="w-1.5 h-1.5 bg-accent-500 rounded-full shrink-0 mt-1.5" />
                     <span>Viewing this website or communicating through it does not create an advocate-client relationship.</span>
                   </li>
+
                   <li className="flex items-start space-x-2.5">
                     <span className="w-1.5 h-1.5 bg-accent-500 rounded-full shrink-0 mt-1.5" />
                     <span>You should obtain independent legal advice before acting on any information contained on this website.</span>
                   </li>
+
                   <li className="flex items-start space-x-2.5">
                     <span className="w-1.5 h-1.5 bg-accent-500 rounded-full shrink-0 mt-1.5" />
                     <span>The advocate shall not be liable for any action taken based on the information available on this website.</span>
@@ -109,7 +123,7 @@ export default function DisclaimerModal() {
                 className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-3.5 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg shadow-accent-500/10 active:scale-[0.98] transition-all uppercase tracking-wider cursor-pointer"
               >
                 <FiCheck className="w-4 h-4 stroke-[3]" />
-                <span>✅ I Have Read and Agree – Enter Website</span>
+                <span> I Have Read and Agree – Enter Website</span>
               </button>
             </div>
           </motion.div>
