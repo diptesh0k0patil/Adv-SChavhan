@@ -204,9 +204,25 @@ export default function Home() {
               <p className="text-slate-600 font-sans leading-relaxed text-base">
                 I am an Advocate practicing before the <strong>Bombay High Court (Mumbai, Aurangabad, and Circuit benches)</strong>. With extensive training in Sociology, Business Management, and the Law, I bring a unique multidisciplinary perspective to every legal challenge.
               </p>
-              <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                Having served as a <strong>Special Public Prosecutor</strong> for the State of Maharashtra, I understand both sides of complex trial procedures. I combine rigorous legal study with modern, analytical workflow automation to deliver reliable outcomes for corporations and individuals.
-              </p>
+              <p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
+  Advocate Shankar Chavan is a dedicated legal practitioner practicing before
+  the High Court of Judicature at Bombay, including its Principal Bench at
+  Mumbai and the Circuit Benches at Aurangabad, Nagpur, and Kolhapur, as well
+  as various District and Sessions Courts across Maharashtra. Committed to
+  justice, integrity, and professional excellence, he provides comprehensive
+  legal representation to individuals, businesses, and institutions.
+</p>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm">
+  With a strong academic foundation and practical courtroom experience,
+  Advocate Shankar Chavan has developed expertise in handling a wide range of
+  legal matters. His areas of practice include Criminal Law, Civil Litigation,
+  Constitutional Law, Family Law, Property Disputes, Commercial Matters, Bail
+  Applications, Writ Petitions, Appeals, and Cheque Bounce Cases under the
+  Negotiable Instruments Act. He approaches every matter with meticulous
+  preparation, strategic legal analysis, and a results-oriented mindset.
+</p>
+
 
               {/* Focus List */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
