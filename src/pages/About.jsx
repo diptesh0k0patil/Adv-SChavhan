@@ -77,17 +77,44 @@ export default function About() {
                 The Legal Mind
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">
-                Advocate Shankar Chavan
-              </h2>
-              <p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
-                Advocate Shankar Chavan is an esteemed legal counsel practicing before the <strong>High Court of Judicature at Bombay (Mumbai)</strong>, alongside Circuit Benches in Aurangabad and Nagpur. Equipped with a multidimensional career background, Adv. Shankar provides analytical and rigorous legal solutions.
-              </p>
-              <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                His professional portfolio spans representation in critical criminal trials, high-stake civil litigations, and commercial contract arbitrations. As the former <strong>Special Public Prosecutor for the State of Maharashtra</strong>, he handled various high-profile graft and financial irregularity prosecutions, gaining acute perspective in government compliance and courtroom trials.
-              </p>
-              <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                In addition to his legal practice, Adv. Shankar is a technological innovator. He founded <strong>Infodad Technologies Private Limited</strong>, which focus on developing innovative legaltech systems that bring transparency, speed, and accuracy to case tracking and legal research workflows.
-              </p>
+  Advocate Shankar Chavan
+</h2>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
+  Advocate Shankar Chavan is a dedicated legal practitioner practicing before
+  the High Court of Judicature at Bombay, including its Principal Bench at
+  Mumbai and the Circuit Benches at Aurangabad, Nagpur, and Kolhapur, as well
+  as various District and Sessions Courts across Maharashtra. Committed to
+  justice, integrity, and professional excellence, he provides comprehensive
+  legal representation to individuals, businesses, and institutions.
+</p>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm">
+  With a strong academic foundation and practical courtroom experience,
+  Advocate Shankar Chavan has developed expertise in handling a wide range of
+  legal matters. His areas of practice include Criminal Law, Civil Litigation,
+  Constitutional Law, Family Law, Property Disputes, Commercial Matters, Bail
+  Applications, Writ Petitions, Appeals, and Cheque Bounce Cases under the
+  Negotiable Instruments Act. He approaches every matter with meticulous
+  preparation, strategic legal analysis, and a results-oriented mindset.
+</p>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm">
+  Known for his ethical practice and client-centric approach, he believes that
+  every case deserves personalized attention and transparent communication.
+  His advocacy is built on thorough legal research, effective courtroom
+  representation, and practical legal solutions designed to protect the
+  rights and interests of his clients while maintaining the highest standards
+  of professional conduct.
+</p>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm">
+  Beyond litigation, Advocate Shankar Chavan is committed to promoting legal
+  awareness and ensuring access to quality legal services. His mission is to
+  deliver reliable, confidential, and effective legal counsel while upholding
+  the rule of law and fostering trust through professionalism, dedication, and
+  unwavering commitment to justice.
+</p>
             </motion.div>
 
             {/* Photo & Mission Card */}
@@ -160,95 +187,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Educational & Professional Journey */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-bold tracking-widest text-accent-500 uppercase block">
-              Qualifications &amp; Milestones
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900">
-              Education &amp; Career Journey
-            </h2>
-            <p className="text-sm text-slate-500">
-              A comprehensive view of the scholastic academic credentials and roles held by the Advocate.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Education Timeline */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="space-y-8"
-            >
-              <h3 className="text-xl font-serif font-bold text-slate-900 flex items-center space-x-2">
-                <FaGraduationCap className="w-5 h-5 text-accent-500" />
-                <span>Scholastic Background</span>
-              </h3>
-
-              <div className="space-y-6 border-l-2 border-slate-200 pl-6 ml-2">
-                {ADVOCATE_INFO.education.map((edu, idx) => (
-                  <div key={idx} className="relative space-y-2">
-                    {/* Circle Bullet */}
-                    <span className="absolute -left-[31px] top-1.5 w-[14px] h-[14px] rounded-full bg-white border-2 border-accent-500 flex items-center justify-center">
-                      <span className="w-1.5 h-1.5 bg-accent-500 rounded-full" />
-                    </span>
-                    <span className="text-xs uppercase font-bold text-accent-500 tracking-wider">
-                      {edu.period}
-                    </span>
-                    <h4 className="font-serif font-bold text-slate-900 text-lg">
-                      {edu.degree}
-                    </h4>
-                    <p className="text-xs text-slate-500 font-sans">
-                      {edu.institution}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Experience Timeline */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.15 }}
-              className="space-y-8"
-            >
-              <h3 className="text-xl font-serif font-bold text-slate-900 flex items-center space-x-2">
-                <FiActivity className="w-5 h-5 text-primary-500" />
-                <span>Professional Timeline</span>
-              </h3>
-
-              <div className="space-y-6 border-l-2 border-slate-200 pl-6 ml-2">
-                {ADVOCATE_INFO.experience.map((exp, idx) => (
-                  <div key={idx} className="relative space-y-2">
-                    {/* Circle Bullet */}
-                    <span className="absolute -left-[31px] top-1.5 w-[14px] h-[14px] rounded-full bg-white border-2 border-primary-500 flex items-center justify-center">
-                      <span className="w-1.5 h-1.5 bg-primary-500 rounded-full" />
-                    </span>
-                    <span className="text-xs uppercase font-bold text-primary-500 tracking-wider">
-                      {exp.period}
-                    </span>
-                    <h4 className="font-serif font-bold text-slate-900 text-lg">
-                      {exp.role}
-                    </h4>
-                    <p className="text-xs font-semibold text-slate-700 font-sans">
-                      {exp.organization}
-                    </p>
-                    <p className="text-xs text-slate-500 font-sans leading-relaxed">
-                      {exp.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Office details */}
       <section className="py-20 bg-primary-950 text-white">
@@ -259,7 +198,7 @@ export default function About() {
                 Office Locations
               </span>
               <h2 className="text-3xl font-serif font-bold leading-tight">
-                Chamber Consultations In Mumbai &amp; Pune
+                Chamber Consultations In Mumbai &amp
               </h2>
               <p className="text-slate-300 text-sm leading-relaxed font-sans">
                 Our main offices are located near the highest state courts, allowing us to maintain robust case preparations and offer close, high-level client consultations.
@@ -274,15 +213,7 @@ export default function About() {
                 <p className="text-xs text-slate-400 font-sans pl-6">{ADVOCATE_INFO.mainOffice.address}</p>
               </div>
 
-              {/* Office 2 */}
-              <div className="space-y-2">
-                <h4 className="font-serif font-bold text-white text-lg flex items-center space-x-2">
-                  <FiMapPin className="w-4 h-4 text-accent-400" />
-                  <span>{ADVOCATE_INFO.puneOffice.title}</span>
-                </h4>
-                <p className="text-xs text-slate-400 font-sans pl-6">{ADVOCATE_INFO.puneOffice.address}</p>
-              </div>
-            </div>
+             
 
             {/* Contact quick preview */}
             <div className="lg:col-span-6">
