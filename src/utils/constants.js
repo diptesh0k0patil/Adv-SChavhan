@@ -16,16 +16,12 @@ export const ADVOCATE_INFO = {
   whatsappPhone: "919769759737", // Used for wa.me link
   email: "adv.shankarchavan@gmail.com",
   mainOffice: {
-    title: "Chambers - Bombay High Court",
-    address: "Dr Kane Road, Fort, Mumbai, Maharashtra 400032",
+    title: " Bombay High Court",
+    address: "BBA Room No. 57, High Court Main Building, 3rd Floor Fort, Mumbai – 400032",
     googleMapsLink: "https://maps.google.com/?q=Bombay+High+Court,+Fort,+Mumbai",
     embedMapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.220199589333!2d72.82903747582531!3d18.932731982743115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e7cfffffff%3A0x6bfa3b632db2a3fc!2sHigh%20Court%20Of%20Bombay!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
   },
-  puneOffice: {
-    title: "Pune Branch Chamber",
-    address: "Shivajinagar District Court Compound, Pune, Maharashtra 411005",
-    googleMapsLink: "https://maps.google.com/?q=Shivajinagar+District+Court,+Pune",
-  },
+  
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/shankarchavan",
     facebook: "https://www.facebook.com/bloggershankar/",
