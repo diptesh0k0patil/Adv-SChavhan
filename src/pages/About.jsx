@@ -188,77 +188,119 @@ export default function About() {
       </section>
 
       
-  
-      {/* Office details */}
-      <section className="py-20 bg-primary-950 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold tracking-widest text-accent-300 uppercase block">
-                Office Locations
-              </span>
-              <h2 className="text-3xl font-serif font-bold leading-tight">
-                Chamber Consultations In Mumbai &amp; Pune
-              </h2>
-              <p className="text-slate-300 text-sm leading-relaxed font-sans">
-                Our main offices are located near the highest state courts, allowing us to maintain robust case preparations and offer close, high-level client consultations.
-              </p>
+  {/* Office Details */}
+<section className="bg-slate-950 py-20 text-white">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+      
+      {/* Office Information */}
+      <div className="space-y-6 lg:col-span-6">
+        <span className="block text-xs font-bold uppercase tracking-widest text-amber-400">
+          Office Locations
+        </span>
 
-              {/* Office 1 */}
-              <div className="space-y-2">
-                <h4 className="font-serif font-bold text-white text-lg flex items-center space-x-2">
-                  <FiMapPin className="w-4 h-4 text-accent-400" />
-                  <span>{ADVOCATE_INFO.mainOffice.title}</span>
-                </h4>
-                <p className="text-xs text-slate-400 font-sans pl-6">{ADVOCATE_INFO.mainOffice.address}</p>
+        <h2 className="font-serif text-3xl font-bold leading-tight text-white sm:text-4xl">
+          Chamber Consultations in Mumbai &amp; Pune
+        </h2>
+
+        <p className="max-w-xl font-sans text-sm leading-relaxed text-slate-300 sm:text-base">
+          Our main offices are located near the highest state courts, allowing
+          us to maintain robust case preparations and offer close, high-level
+          client consultations.
+        </p>
+
+        {/* Main Office */}
+        <div className="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <h4 className="flex items-center gap-3 font-serif text-lg font-bold text-white">
+            <FiMapPin className="h-5 w-5 flex-shrink-0 text-amber-400" />
+
+            <span>{ADVOCATE_INFO.mainOffice.title}</span>
+          </h4>
+
+          <p className="mt-2 pl-8 font-sans text-sm leading-relaxed text-slate-300">
+            {ADVOCATE_INFO.mainOffice.address}
+          </p>
+        </div>
+
+        {/* Pune Office */}
+        <div className="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <h4 className="flex items-center gap-3 font-serif text-lg font-bold text-white">
+            <FiMapPin className="h-5 w-5 flex-shrink-0 text-amber-400" />
+
+            <span>{ADVOCATE_INFO.puneOffice.title}</span>
+          </h4>
+
+          <p className="mt-2 pl-8 font-sans text-sm leading-relaxed text-slate-300">
+            {ADVOCATE_INFO.puneOffice.address}
+          </p>
+        </div>
+      </div>
+
+      {/* Quick Consultation */}
+      <div className="lg:col-span-6">
+        <div className="space-y-6 rounded-2xl border border-slate-700 bg-slate-900 p-6 shadow-xl sm:p-8">
+          <div>
+            <span className="mb-2 block text-xs font-bold uppercase tracking-widest text-amber-400">
+              Contact Our Chamber
+            </span>
+
+            <h3 className="font-serif text-2xl font-bold text-white">
+              Quick Consultation Setup
+            </h3>
+          </div>
+
+          <p className="font-sans text-sm leading-relaxed text-slate-300">
+            We look forward to reviewing your case briefs. Feel free to contact
+            our chamber or schedule a dedicated virtual appointment.
+          </p>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            
+            {/* Phone */}
+            <a
+              href={`tel:${ADVOCATE_INFO.phone.replace(/\s+/g, "")}`}
+              className="group flex items-center gap-4 rounded-xl border border-slate-700 bg-slate-800 p-4 transition-all duration-300 hover:border-amber-400 hover:bg-slate-700"
+            >
+              <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-amber-400/10">
+                <FiPhone className="h-5 w-5 text-amber-400" />
               </div>
 
-              {/* Office 2 */}
-              <div className="space-y-2">
-                <h4 className="font-serif font-bold text-white text-lg flex items-center space-x-2">
-                  <FiMapPin className="w-4 h-4 text-accent-400" />
-                  <span>{ADVOCATE_INFO.puneOffice.title}</span>
-                </h4>
-                <p className="text-xs text-slate-400 font-sans pl-6">{ADVOCATE_INFO.puneOffice.address}</p>
-              </div>
-            </div>
-
-            {/* Contact quick preview */}
-            <div className="lg:col-span-6">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-8 space-y-6">
-                <h3 className="font-serif font-bold text-white text-xl">Quick Consultation Setup</h3>
-                <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                  We look forward to reviewing your case briefs. Feel free to ring our chamber or schedule a dedicated virtual appointment.
+              <div className="min-w-0">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                  Call Directly
                 </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <a
-                    href={`tel:${ADVOCATE_INFO.phone.replace(/\s+/g, '')}`}
-                    className="flex items-center space-x-3 bg-white/5 hover:bg-white/10 border border-white/5 p-4 rounded-xl transition-all"
-                  >
-                    <FiPhone className="w-5 h-5 text-accent-400" />
-                    <div>
-                      <p className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Call Directly</p>
-                      <p className="text-sm font-semibold text-white">{ADVOCATE_INFO.phone}</p>
-                    </div>
-                  </a>
 
-                  <a
-                    href={`mailto:${ADVOCATE_INFO.email}`}
-                    className="flex items-center space-x-3 bg-white/5 hover:bg-white/10 border border-white/5 p-4 rounded-xl transition-all"
-                  >
-                    <FiMail className="w-5 h-5 text-accent-400" />
-                    <div>
-                      <p className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Email Us</p>
-                      <p className="text-sm font-semibold text-white break-all">{ADVOCATE_INFO.email}</p>
-                    </div>
-                  </a>
-                </div>
+                <p className="mt-1 text-sm font-semibold text-white">
+                  {ADVOCATE_INFO.phone}
+                </p>
               </div>
-            </div>
+            </a>
+
+            {/* Email */}
+            <a
+              href={`mailto:${ADVOCATE_INFO.email}`}
+              className="group flex items-center gap-4 rounded-xl border border-slate-700 bg-slate-800 p-4 transition-all duration-300 hover:border-amber-400 hover:bg-slate-700"
+            >
+              <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-amber-400/10">
+                <FiMail className="h-5 w-5 text-amber-400" />
+              </div>
+
+              <div className="min-w-0">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                  Email Us
+                </p>
+
+                <p className="mt-1 break-all text-sm font-semibold text-white">
+                  {ADVOCATE_INFO.email}
+                </p>
+              </div>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
