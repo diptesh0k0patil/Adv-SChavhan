@@ -154,13 +154,13 @@ export default function Footer() {
           {/* Column 4: Contact Info */}
           <div className="space-y-6">
             <h3 className="text-white font-serif font-semibold text-lg relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-10 after:h-[2px] after:bg-accent-400">
-              Primary Chambers
+              Communication Address
             </h3>
             <ul className="space-y-4 font-sans text-sm">
               <li className="flex items-start space-x-3">
                 <FiMapPin className="w-5 h-5 text-accent-400 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-white font-medium text-xs">Bombay High Court Chamber</p>
+                  <p className="text-white font-medium text-xs">Bombay High Court</p>
                   <p className="text-xs text-slate-400 mt-1">{ADVOCATE_INFO.mainOffice.address}</p>
                   <a
                     href={ADVOCATE_INFO.mainOffice.googleMapsLink}
