@@ -76,21 +76,45 @@ export default function About() {
               <span className="text-xs font-bold tracking-widest text-accent-500 uppercase block">
                 The Legal Mind
               </span>
-              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">
-                Advocate Shankar Chavan
-              </h2>
-              <p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
-                Advocate Shankar Chavan is a dedicated legal practitioner practicing before the High Court of Judicature at Bombay, including its Principal Bench at Mumbai and the Circuit Benches at Aurangabad, Nagpur, and Kolhapur, as well as various District and Sessions Courts across Maharashtra. Committed to justice, integrity, and professional excellence, he provides comprehensive legal representation to individuals, businesses, and institutions.
-              </p>
-              <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                With a strong academic foundation and practical courtroom experience, Advocate Shankar Chavan has developed expertise in handling a wide range of legal matters. His areas of practice include Criminal Law, Civil Litigation, Constitutional Law, Family Law, Property Disputes, Commercial Matters, Bail Applications, Writ Petitions, Appeals, and Cheque Bounce Cases under the Negotiable Instruments Act. He approaches every matter with meticulous preparation, strategic legal analysis, and a results-oriented mindset.
-              </p>
-              <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                Known for his ethical practice and client-centric approach, he believes that every case deserves personalized attention and transparent communication. His advocacy is built on thorough legal research, effective courtroom representation, and practical legal solutions designed to protect the rights and interests of his clients while maintaining the highest standards of professional conduct.
-              </p>
-               <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                Beyond litigation, Advocate Shankar Chavan is committed to promoting legal awareness and ensuring access to quality legal services. His mission is to deliver reliable, confidential, and effective legal counsel while upholding the rule of law and fostering trust through professionalism, dedication, and unwavering commitment to justice.
-              </p>
+             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">
+  Advocate Shankar Chavan
+</h2>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
+  Advocate Shankar Chavan is a dedicated legal practitioner practicing before
+  the High Court of Judicature at Bombay, including its Principal Bench at
+  Mumbai and the Circuit Benches at Aurangabad, Nagpur, and Kolhapur, as well
+  as various District and Sessions Courts across Maharashtra. Committed to
+  justice, integrity, and professional excellence, he provides comprehensive
+  legal representation to individuals, businesses, and institutions.
+</p>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm">
+  With a strong academic foundation and practical courtroom experience,
+  Advocate Shankar Chavan has developed expertise in handling a wide range of
+  legal matters. His areas of practice include Criminal Law, Civil Litigation,
+  Constitutional Law, Family Law, Property Disputes, Commercial Matters, Bail
+  Applications, Writ Petitions, Appeals, and Cheque Bounce Cases under the
+  Negotiable Instruments Act. He approaches every matter with meticulous
+  preparation, strategic legal analysis, and a results-oriented mindset.
+</p>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm">
+  Known for his ethical practice and client-centric approach, he believes that
+  every case deserves personalized attention and transparent communication.
+  His advocacy is built on thorough legal research, effective courtroom
+  representation, and practical legal solutions designed to protect the
+  rights and interests of his clients while maintaining the highest standards
+  of professional conduct.
+</p>
+
+<p className="text-slate-600 font-sans leading-relaxed text-sm">
+  Beyond litigation, Advocate Shankar Chavan is committed to promoting legal
+  awareness and ensuring access to quality legal services. His mission is to
+  deliver reliable, confidential, and effective legal counsel while upholding
+  the rule of law and fostering trust through professionalism, dedication, and
+  unwavering commitment to justice.
+</p>
             </motion.div>
 
             {/* Photo & Mission Card */}
