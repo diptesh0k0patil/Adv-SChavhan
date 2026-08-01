@@ -189,68 +189,123 @@ export default function About() {
 
       
 
-      {/* Office details */}
-      <section className="py-20 bg-primary-950 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold tracking-widest text-accent-300 uppercase block">
-                Office Locations
-              </span>
-              <h2 className="text-3xl font-serif font-bold leading-tight">
-                Chamber Consultations In Mumbai &amp
-              </h2>
-              <p className="text-slate-300 text-sm leading-relaxed font-sans">
-                Our main offices are located near the highest state courts, allowing us to maintain robust case preparations and offer close, high-level client consultations.
+      {/* Office Details */}
+<section className="py-20 bg-slate-50 border-t border-slate-200">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      
+      {/* Office Information */}
+      <div className="lg:col-span-6 space-y-6">
+        <div className="space-y-3">
+          <span className="text-xs font-bold tracking-widest text-accent-600 uppercase block">
+            Office Location
+          </span>
+
+          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">
+            Chamber Consultation in Mumbai
+          </h2>
+
+          <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
+            Our chamber is conveniently located at the Bombay High Court,
+            allowing us to provide professional, confidential, and effective
+            legal consultations to our clients.
+          </p>
+        </div>
+
+        {/* Mumbai Office Card */}
+        <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+          <div className="flex items-start gap-4">
+            <div className="w-11 h-11 rounded-xl bg-accent-50 flex items-center justify-center flex-shrink-0">
+              <FiMapPin className="w-5 h-5 text-accent-600" />
+            </div>
+
+            <div className="space-y-2">
+              <h4 className="font-serif font-bold text-slate-900 text-lg">
+                {ADVOCATE_INFO.mainOffice?.title || "Bombay High Court"}
+              </h4>
+
+              <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                {ADVOCATE_INFO.mainOffice?.address ||
+                  "BBA Room No. 57, High Court Main Building, 3rd Floor, Fort, Mumbai – 400032"}
               </p>
 
-              {/* Office 1 */}
-              <div className="space-y-2">
-                <h4 className="font-serif font-bold text-white text-lg flex items-center space-x-2">
-                  <FiMapPin className="w-4 h-4 text-accent-400" />
-                  <span>{ADVOCATE_INFO.mainOffice.title}</span>
-                </h4>
-                <p className="text-xs text-slate-400 font-sans pl-6">{ADVOCATE_INFO.mainOffice.address}</p>
-              </div>
-
-             
-
-            {/* Contact quick preview */}
-            <div className="lg:col-span-6">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-8 space-y-6">
-                <h3 className="font-serif font-bold text-white text-xl">Quick Consultation Setup</h3>
-                <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                  We look forward to reviewing your case briefs. Feel free to ring our chamber or schedule a dedicated virtual appointment.
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <a
-                    href={`tel:${ADVOCATE_INFO.phone.replace(/\s+/g, '')}`}
-                    className="flex items-center space-x-3 bg-white/5 hover:bg-white/10 border border-white/5 p-4 rounded-xl transition-all"
-                  >
-                    <FiPhone className="w-5 h-5 text-accent-400" />
-                    <div>
-                      <p className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Call Directly</p>
-                      <p className="text-sm font-semibold text-white">{ADVOCATE_INFO.phone}</p>
-                    </div>
-                  </a>
-
-                  <a
-                    href={`mailto:${ADVOCATE_INFO.email}`}
-                    className="flex items-center space-x-3 bg-white/5 hover:bg-white/10 border border-white/5 p-4 rounded-xl transition-all"
-                  >
-                    <FiMail className="w-5 h-5 text-accent-400" />
-                    <div>
-                      <p className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Email Us</p>
-                      <p className="text-sm font-semibold text-white break-all">{ADVOCATE_INFO.email}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
+              {ADVOCATE_INFO.mainOffice?.googleMapsLink && (
+                <a
+                  href={ADVOCATE_INFO.mainOffice.googleMapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 pt-2 text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors"
+                >
+                  <FiMapPin className="w-4 h-4" />
+                  <span>View on Google Maps</span>
+                </a>
+              )}
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Quick Consultation */}
+      <div className="lg:col-span-6">
+        <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-lg space-y-6">
+          <div className="space-y-3">
+            <h3 className="font-serif font-bold text-slate-900 text-xl sm:text-2xl">
+              Quick Consultation Setup
+            </h3>
+
+            <p className="text-sm text-slate-600 font-sans leading-relaxed">
+              Contact the chamber directly to discuss your legal matter or
+              schedule a dedicated consultation appointment.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            {/* Phone */}
+            <a
+              href={`tel:${ADVOCATE_INFO.phone.replace(/\s+/g, "")}`}
+              className="flex items-center gap-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 p-4 rounded-xl transition-all duration-300"
+            >
+              <div className="w-10 h-10 rounded-full bg-accent-50 flex items-center justify-center flex-shrink-0">
+                <FiPhone className="w-5 h-5 text-accent-600" />
+              </div>
+
+              <div className="min-w-0">
+                <p className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">
+                  Call Directly
+                </p>
+
+                <p className="text-sm font-semibold text-slate-900 break-words">
+                  {ADVOCATE_INFO.phone}
+                </p>
+              </div>
+            </a>
+
+            {/* Email */}
+            <a
+              href={`mailto:${ADVOCATE_INFO.email}`}
+              className="flex items-center gap-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 p-4 rounded-xl transition-all duration-300"
+            >
+              <div className="w-10 h-10 rounded-full bg-accent-50 flex items-center justify-center flex-shrink-0">
+                <FiMail className="w-5 h-5 text-accent-600" />
+              </div>
+
+              <div className="min-w-0">
+                <p className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">
+                  Email Us
+                </p>
+
+                <p className="text-sm font-semibold text-slate-900 break-all">
+                  {ADVOCATE_INFO.email}
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
