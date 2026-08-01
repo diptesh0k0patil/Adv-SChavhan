@@ -80,13 +80,16 @@ export default function About() {
                 Advocate Shankar Chavan
               </h2>
               <p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
-                Advocate Shankar Chavan is an esteemed legal counsel practicing before the <strong>High Court of Judicature at Bombay (Mumbai)</strong>, alongside Circuit Benches in Aurangabad and Nagpur. Equipped with a multidimensional career background, Adv. Shankar provides analytical and rigorous legal solutions.
+                Advocate Shankar Chavan is a dedicated legal practitioner practicing before the High Court of Judicature at Bombay, including its Principal Bench at Mumbai and the Circuit Benches at Aurangabad, Nagpur, and Kolhapur, as well as various District and Sessions Courts across Maharashtra. Committed to justice, integrity, and professional excellence, he provides comprehensive legal representation to individuals, businesses, and institutions.
               </p>
               <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                His professional portfolio spans representation in critical criminal trials, high-stake civil litigations, and commercial contract arbitrations. As the former <strong>Special Public Prosecutor for the State of Maharashtra</strong>, he handled various high-profile graft and financial irregularity prosecutions, gaining acute perspective in government compliance and courtroom trials.
+                With a strong academic foundation and practical courtroom experience, Advocate Shankar Chavan has developed expertise in handling a wide range of legal matters. His areas of practice include Criminal Law, Civil Litigation, Constitutional Law, Family Law, Property Disputes, Commercial Matters, Bail Applications, Writ Petitions, Appeals, and Cheque Bounce Cases under the Negotiable Instruments Act. He approaches every matter with meticulous preparation, strategic legal analysis, and a results-oriented mindset.
               </p>
               <p className="text-slate-600 font-sans leading-relaxed text-sm">
-                In addition to his legal practice, Adv. Shankar is a technological innovator. He founded <strong>Infodad Technologies Private Limited</strong>, which focus on developing innovative legaltech systems that bring transparency, speed, and accuracy to case tracking and legal research workflows.
+                Known for his ethical practice and client-centric approach, he believes that every case deserves personalized attention and transparent communication. His advocacy is built on thorough legal research, effective courtroom representation, and practical legal solutions designed to protect the rights and interests of his clients while maintaining the highest standards of professional conduct.
+              </p>
+               <p className="text-slate-600 font-sans leading-relaxed text-sm">
+                Beyond litigation, Advocate Shankar Chavan is committed to promoting legal awareness and ensuring access to quality legal services. His mission is to deliver reliable, confidential, and effective legal counsel while upholding the rule of law and fostering trust through professionalism, dedication, and unwavering commitment to justice.
               </p>
             </motion.div>
 
