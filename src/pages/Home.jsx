@@ -82,7 +82,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-slate-300 text-base sm:text-lg max-w-xl font-sans font-light leading-relaxed"
               >
-                With over 7 years of dedication to rigorous courtroom trial strategies, commercial arbitration, and constitutional appeals. Practicing at Mumbai, Pune, and Aurangabad Benches.
+                Advocate Shankar Chavan is a dedicated legal practitioner practicing before the High Court of Judicature at Bombay, including its Principal Bench at Mumbai and the Circuit Benches at Aurangabad, Nagpur, Goa and Kolhapur, as well as various District and Sessions Courts across Maharashtra
               </motion.p>
 
               {/* Action Buttons */}
