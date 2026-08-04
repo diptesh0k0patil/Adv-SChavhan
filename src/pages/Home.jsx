@@ -117,20 +117,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="grid grid-cols-3 gap-6 pt-6 border-t border-white/5"
               >
-                <div>
-                  <h4 className="text-2xl sm:text-3xl font-serif font-bold text-accent-300">7+</h4>
-                  <p className="text-xs text-slate-400 font-sans tracking-wide mt-1 uppercase">Years Experience</p>
-                </div>
-                <div>
-                  <h4 className="text-2xl sm:text-3xl font-serif font-bold text-accent-300">500+</h4>
-                  <p className="text-xs text-slate-400 font-sans tracking-wide mt-1 uppercase">Cases Handled</p>
-                </div>
-                <div>
-                  <h4 className="text-2xl sm:text-3xl font-serif font-bold text-accent-300">95%</h4>
-                  <p className="text-xs text-slate-400 font-sans tracking-wide mt-1 uppercase">Client Trust</p>
-                </div>
-              </motion.div>
-            </div>
+               
 
             {/* Right Column: Premium Graphical Card representing Legal Pillar */}
             <div className="lg:col-span-5 flex justify-center">
