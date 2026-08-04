@@ -215,11 +215,6 @@ export const WHY_CHOOSE_US = [
     icon: "FiCheckCircle"
   },
   {
-    title: "Former Prosecutor's Insight",
-    description: "Years spent serving as a Special Public Prosecutor for the State of Maharashtra offer a comprehensive perspective on state agencies and criminal trial tactics.",
-    icon: "FiCheckCircle"
-  },
-  {
     title: "Tech-Forward Mindset",
     description: "As a LegalTech founder, Adv. Shankar leverages modern AI, case-law tracking databases, and streamlined digital tools to build bulletproof cases.",
     icon: "FiCheckCircle"
