@@ -108,16 +108,7 @@ export default function Home() {
                   <FaWhatsapp className="w-5 h-5" />
                   <span>Chat on WhatsApp</span>
                 </a>
-              </motion.div>
-
-              {/* Quick Trust Badges */}
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="grid grid-cols-3 gap-6 pt-6 border-t border-white/5"
-              >
-               
+              </motion.div>            
 
             {/* Right Column: Premium Graphical Card representing Legal Pillar */}
             <div className="lg:col-span-5 flex justify-center">
