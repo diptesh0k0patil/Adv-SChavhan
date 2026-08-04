@@ -5,7 +5,7 @@ import { FiArrowRight, FiShield, FiHome, FiBriefcase, FiUsers, FiBookmark, FiHea
 import { FaWhatsapp, FaQuoteLeft, FaHandshake } from 'react-icons/fa';
 import { ADVOCATE_INFO, PRACTICE_AREAS, WHY_CHOOSE_US, TESTIMONIALS, GALLERY_IMAGES } from '../utils/constants';
 import SEO from '../components/SEO';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 // Dynamic Icon Mapper for Practice Areas
@@ -82,7 +82,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-slate-300 text-base sm:text-lg max-w-xl font-sans font-light leading-relaxed"
               >
-              Advocate Shankar Chavan is a dedicated legal practitioner practicing before the High Court of Judicature at Bombay, including its Principal Bench at Mumbai and the Circuit Benches at Aurangabad, Nagpur, Goa and Kolhapur, as well as various District and Sessions Courts across Maharashtra.
+                Advocate Shankar Chavan is a dedicated legal practitioner practicing before the High Court of Judicature at Bombay, including its Principal Bench at Mumbai and the Circuit Benches at Aurangabad, Nagpur, Goa and Kolhapur, as well as various District and Sessions Courts across Maharashtra.
               </motion.p>
 
               {/* Action Buttons */}
@@ -108,10 +108,7 @@ export default function Home() {
                   <FaWhatsapp className="w-5 h-5" />
                   <span>Chat on WhatsApp</span>
                 </a>
-              </motion.div>
-
-              {/* Quick Trust Badges */}
-              
+              </motion.div>            
 
             {/* Right Column: Premium Graphical Card representing Legal Pillar */}
             <div className="lg:col-span-5 flex justify-center">
@@ -182,7 +179,10 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">
                 Deep Commitment to Advocacy, Constitutional Truth, and Diligent Case Research
               </h2>
-               <p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
+              <p className="text-slate-600 font-sans leading-relaxed text-base">
+                I am an Advocate practicing before the <strong>Bombay High Court (Mumbai, Aurangabad, and Circuit benches)</strong>. With extensive training in Sociology, Business Management, and the Law, I bring a unique multidisciplinary perspective to every legal challenge.
+              </p>
+              <p className="text-slate-600 font-sans leading-relaxed text-sm sm:text-base">
   Advocate Shankar Chavan is a dedicated legal practitioner practicing before
   the High Court of Judicature at Bombay, including its Principal Bench at
   Mumbai and the Circuit Benches at Aurangabad, Nagpur, and Kolhapur, as well
@@ -200,6 +200,8 @@ export default function Home() {
   Negotiable Instruments Act. He approaches every matter with meticulous
   preparation, strategic legal analysis, and a results-oriented mindset.
 </p>
+
+
               {/* Focus List */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="flex items-center space-x-2 text-sm text-slate-700">
