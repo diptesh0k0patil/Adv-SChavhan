@@ -5,7 +5,7 @@ import { FiArrowRight, FiShield, FiHome, FiBriefcase, FiUsers, FiBookmark, FiHea
 import { FaWhatsapp, FaQuoteLeft, FaHandshake } from 'react-icons/fa';
 import { ADVOCATE_INFO, PRACTICE_AREAS, WHY_CHOOSE_US, TESTIMONIALS, GALLERY_IMAGES } from '../utils/constants';
 import SEO from '../components/SEO';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 // Dynamic Icon Mapper for Practice Areas
