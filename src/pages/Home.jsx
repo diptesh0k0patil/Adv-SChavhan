@@ -297,7 +297,7 @@ export default function Home() {
                   </h4>
 
                   <p className="text-xs text-accent-300 font-sans tracking-wide uppercase mt-1">
-                    High Court Advocate &amp; SPP (Former)
+                    High Court Advocate 
                   </p>
                 </div>
               </div>
